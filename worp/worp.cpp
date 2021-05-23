@@ -15,30 +15,34 @@ int factorial(int n)
   return (n == 1 || n == 0) ? 1 : factorial(n - 1) * n;
 }
 
+/*
+Print "Help" text
+*/
 void printHelp()
 {
 
 	cout
 	<<" worp <min> <max> <first word> <second word> [... <nth word>]"<<endl<<endl
-	<<"\t Word Permutator generates all possible permutations of the given words."<<endl<<endl
-	<<"\t Keep in mind that more words are given, more time consuming it will be."<<endl
-	<<"\t Moreover, it may generate very large files (ridiculously large files!)."<<endl
+	<<" Word Permutator generates all possible permutations of the given words."<<endl
+	<<" Keep in mind that more words are given, more time consuming it will be."<<endl
+	<<" Moreover, it may generate very large files (ridiculously large files!)."<<endl<<endl
 	
-	<<"\t\t <min> - <max> idicate how long should the outputed words be."<<endl
-	<<"\t\t\t 0 values means 'no limit' (i.e. 0 0 will generate words with length 1 as well as 1000 or more)"<<endl<<endl
-	<<"\t\t Usage Example:"<<endl
-	<<"\t\t $ worp 0 8 this is america > output.txt"<<endl
-	<<"\t\t $ cat output.txt"<<endl
-	<<"\t\t this thisis is isthis"<<endl
-	<<"\t\t thisis"<<endl
-	<<"\t\t is"<<endl
-	<<"\t\t isthis"<<endl
-	<<"\t\t america"<<endl;
+	<<"\t <min> - <max> idicate how long should the outputed words be."<<endl
+	<<"\t   '0' means 'no limit' (i.e. 0 0 will generate words with length 1 as well as 1000 or more)"<<endl<<endl
+	<<"\t Usage Example:"<<endl
+	<<"\t $ worp 0 8 this is america > output.txt"<<endl
+	<<"\t $ cat output.txt"<<endl
+	<<"\t this thisis is isthis"<<endl
+	<<"\t thisis"<<endl
+	<<"\t is"<<endl
+	<<"\t isthis"<<endl
+	<<"\t america"<<endl;
 
 }
 
- //Check if every character in given argument is "string" value
-
+/*
+Check if every character in given argument is "string" value
+*/
 bool isString(char *a)
 {
 	int i=0;
@@ -49,6 +53,9 @@ bool isString(char *a)
 	return true;
 }
 
+/*
+Print an error message
+*/
 void printError(string msg)
 {
 	cout<<"ERROR:"<<msg<<endl;
