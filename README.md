@@ -1,4 +1,4 @@
-# PWP
-Possible Word Permutations
-
-this is a very little project I made just for fun, but feel free to use it if you need or help me to improve it if you wish
+# worp - Word Permutator
+This is a simple script I wrote in C++ some years ago, it allows you to generete all possible permutations of a given list of words.
+Fell fre to use it as you wish.
+I'm not responsible of any damage you may make to your device.
